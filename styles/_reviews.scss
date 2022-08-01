@@ -1,0 +1,197 @@
+.reviews {
+    background: #0A2640;
+    color: white;
+    padding-bottom: 3rem;
+
+    .header {
+        display: grid;
+        grid-template-columns: 70% 30%;
+        margin: 0 10% 0 10%;
+        padding: 5% 0 5% 0;
+        align-items: end;
+        justify-items: end;
+        
+        .title{
+            h1 {
+                font-size: 40px;
+                font-weight: 400;
+                margin-right: 150px;
+            }
+        }
+        .scroll {
+                display: grid;
+                grid-template-columns: auto auto;
+
+            .icon {
+                display: table;
+                padding-right: 20px;
+  
+            /* optional css start */
+                height: 60px;
+                width: 60px;
+            /* optional css end */
+            i {
+                cursor: pointer;
+                color: #0A2640;
+                background: white;
+                padding:19px;
+                border-radius: 50%;
+                text-align: center;
+                vertical-align: middle;
+                border: 1px solid #000000;
+                display: table-cell;
+
+            }
+            }
+        }
+    }
+    .reviews {
+        margin: 0 10% 0 10%;
+        display: grid;
+        grid-template-columns: auto auto auto;
+
+        
+
+        .review-card {
+            background: white;
+            color: black;
+            margin: 10px;
+            padding: 50px 30px 50px 30px;
+            border-radius: 10px;
+
+            h3 {
+                padding: 0 10px 50px 10px;
+                font-size: 24px;
+                font-weight: 400;
+                line-height: 2.5rem;
+            }
+            .user-details {
+                display: grid;
+                grid-template-columns: 20% 80%;
+                align-items: center;
+                margin-left: 10px;
+
+                img {
+                    width: 50px;
+                }
+                h5 {
+                    font-size: 18px;
+                }
+                p {
+                    color: #787878;
+                }
+            }
+        }
+    }
+}
+
+.faq-wrapper {
+    padding: 100px 0 100px 0;
+    margin: 0 100px 0 100px;
+    text-align: center;
+
+    .details-wrapper {
+        display: grid;
+        grid-template-columns: 50% 50%;
+
+        .title {
+            h1 {
+                text-align: left; 
+                padding-top: 30px;
+                padding-left: 80px;
+            }
+        }
+        .questions {
+            padding-top: 30px;
+            text-align: left;
+            padding-left: 100px;
+
+            p {
+                
+                i {
+                    
+                    .arrow-top {
+                        padding-left: 100px;
+                    }
+                }
+            }
+        }
+    }
+    #faq{
+        display: flex;
+        padding-top: 20px;
+        padding-left: 50px;
+        width: 90%;
+  
+      }
+      
+      #faq .add{ /*Add is the name for the plus icon*/
+          display: block;
+      }
+      
+      #faq .remove{ /*Remove is the name for the less icon*/
+          display: none;
+      }
+      
+      #faq i{ 
+          font-size: 30px;
+      }
+      
+      /*Accordion container and each item*/
+      .accordion{
+          max-width: 600px;
+        
+          margin: 0 auto;
+          padding: 0 1.5rem;
+      }	
+      
+      .accordion-item{
+          background-color: transparent;
+          border-bottom: 1px solid #C4C4C4;
+        
+          margin-bottom: 10px;
+          padding: 10px;
+      }
+      
+      /*Styles for the question*/
+      
+      .accordion-title{
+        display: flex;
+        
+        align-items: center;
+        justify-content: space-between;
+        
+        color: black;
+        font-size: 0.9rem;
+        font-weight: 400;
+        
+          width: 100%;
+          padding: .2rem 0;
+          cursor: pointer;
+        transition-duration: 0.5s;
+      }
+      
+      .accordion-title:hover{
+        color: #0A2640;
+      }
+      
+      .accordion-title h2{
+          width: 80%;
+      }
+      
+      /*Styles for the answer*/
+      
+      .accordion-content{
+        max-height: 0;
+        overflow: hidden;
+          position: relative;
+        transition: max-height 0.6s;
+        font-weight: 400;
+        text-align: left;
+      }
+      
+      .accordion-content p{
+        font-size: 0.9rem;
+        padding: 20px 0;
+      }
+}

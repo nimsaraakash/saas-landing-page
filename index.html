@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="styles/hover-min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/d9983190b9.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Boldo</title>
+  </head>
+  <body>
+    <section class="hero">
+      <div class="nav-container">
+        <!-- <div class="ellipse"></div> -->
+        <nav class="animate__animated animate__slideInDown">
+          <div id="logo">
+            <img src="img/Logo.png" alt="logo" class="logo" />
+            <h1 class="logo-title">Boldo</h1>
+          </div>
+          <ul>
+            <li><a class="hover-underline-animation" href="#">Product</a></li>
+            <li><a class="hover-underline-animation" href="#">Services</a></li>
+            <li><a class="hover-underline-animation" href="#">About</a></li>
+            <li>
+              <a class="hvr-grow btn-selected" href="#">Log In</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="mobile-nav">
+          <div class="nav-before">
+            <div class="logo">
+              <img src="img/Logo.png" alt="" />
+              <h1>Boldo</h1>
+            </div>
+            <div class="hamberger">
+              <i onclick="openNav()" class="fa-solid fa-bars fa-xl"></i>
+            </div>
+          </div>
+          <!-- <div class="nav-after">
+          <div class="background">
+            <div class="logo">
+              <img src="img/Logo.png" alt="">
+              <h1>Boldo</h1>
+            </div>
+            <div class="nav-links">
+              <ul>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About</a></li>
+                <li><a class="btn-selected" href="#">Log In</a></li>
+              </ul>
+            </div>
+          </div>
+        </div> -->
+
+          <!-- mobile menu -->
+
+          <!-- The overlay -->
+          <div id="myNav" class="overlay">
+            <!-- Button to close the overlay navigation -->
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+              >&times;</a
+            >
+            <div class="logo-mobile">
+              <img src="img/Logo.png" alt="" />
+              <h1>Boldo</h1>
+            </div>
+            <!-- Overlay content -->
+            <div class="overlay-content">
+              <a href="#">Product</a>
+              <a href="#">Services</a>
+              <a href="#">About</a>
+              <a class="btn-selected" href="#">Log In</a>
+            </div>
+          </div>
+        </div>
+        <div class="hero-content">
+          <div class="hero-details-wrapper">
+            <div class="info">
+              <h1 class="animate__animated animate__fadeInLeft">
+                Save time by building <span class="underline--magical">fast</span> with <span class="underline--magical">Boldo</span>  Template
+              </h1>
+              <p class="animate__animated animate__fadeInLeft">
+                Funding handshake buyer business-to-business metrics iPad
+                partnership. First mover advantage innovator success deployment
+                non-disclosure.
+              </p>
+              <button
+                class="hvr-grow animate__animated animate__fadeInLeft btn-main"
+              >
+                Buy template
+              </button>
+              <button
+                class="animate__animated animate__fadeInLeft btn-outlined"
+              >
+                Explore
+              </button>
+            </div>
+            <div
+              data-tilt
+              id="ex1"
+              class="container animate__animated animate__fadeInRight hero-images"
+            >
+              <img
+                id="ex1-layer"
+                class="box tilt"
+                data-tilt
+                data-tilt-max="10"
+                data-tilt-speed="50"
+                data-tilt-perspective="1000"
+                data-tilt-glare="true"
+                data-maxGlare:
+                .5
+                src="img/hero graphics.svg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="animate__animated animate__zoomIn clients">
+            <!-- <img class="client-Logo" src="img/Client-Logo-2.png" alt="" />
+            <img class="client-Logo" src="img/Client-Logo-3.png" alt="" />
+            <img class="client-Logo" src="img/Client-Logo-2.png" alt="" />
+            <img class="client-Logo" src="img/Client-Logo-3.png" alt="" />
+            <img class="client-Logo" src="img/Client-Logo-2.png" alt="" />
+            <img class="client-Logo" src="img/Client-Logo-3.png" alt="" /> -->
+            <div class="brand-carousel section-padding owl-carousel">
+              <div class="single-logo">
+                <img src="img/Client-Logo-2.png" alt="" />
+              </div>
+              <div class="single-logo">
+                <img src="img/Client-Logo-3.png" alt="" />
+              </div>
+              <div class="single-logo">
+                <img src="img/Client-Logo-2.png" alt="" />
+              </div>
+              <div class="single-logo">
+                <img src="img/Client-Logo-3.png" alt="" />
+              </div>
+              <div class="single-logo">
+                <img src="img/Client-Logo-2.png" alt="" />
+              </div>
+              <div class="single-logo">
+                <img src="img/Client-Logo-3.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="services">
+      <h4 data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+        Our Services
+      </h4>
+      <h1 data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+        Handshake infographic mass market crowdfunding iteration.
+      </h1>
+      <div class="cards">
+        <div data-aos="fade-up" class="card">
+          <img src="img/services-1.svg" alt="" />
+          <h2>Fast Loading</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id,
+            aspernatur.
+          </p>
+          <a class="hover-underline-basic" href="">Explore More</a><i class="fa-solid fa-arrow-right"></i>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="50" class="card">
+          <img src="img/services-2.svg" alt="" />
+          <h2>Easy Customization</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem
+            voluptate distinctio esse ducimus.
+          </p>
+          <a class="hover-underline-basic" href="">Explore More </a><i class="fa-solid fa-arrow-right"></i>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="100" class="card">
+          <img src="img/services-3.svg" alt="" />
+          <h2>Well Documented</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <a class="hover-underline-basic" href="">Explore More</a><i class="fa-solid fa-arrow-right"></i>
+        </div>
+      </div>
+      <section class="services-two">
+        <div class="content-wrapper">
+          <div data-aos="fade-right" class="image">
+            <img class="main-image" src="img/services-img-1.png" alt="" />
+          </div>
+          <div class="services-content">
+            <h2 data-aos="fade-up">
+              We connect our customers with the best, and help them keep up-and
+              stay open.
+            </h2>
+            <br />
+            <p data-aos="fade-up" data-aos-delay="30">
+              <i class="fa-solid fa-circle-check fa-xl"></i> We connect our
+              customers with the best.
+            </p>
+            <br />
+            <p data-aos="fade-up" data-aos-delay="50">
+              <i class="fa-solid fa-circle-check fa-xl"></i> Advisor success
+              customer launch party.
+            </p>
+            <br />
+            <p data-aos="fade-up" data-aos-delay="70">
+              <i class="fa-solid fa-circle-check fa-xl"></i>
+              Business-to-consumer long tail.
+            </p>
+            <br />
+            <div class="hvr-grow btn">
+              <button data-aos="zoom-in" data-aos-delay="90">
+                <a href="">Start Now</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="services-two">
+        <div class="content-wrapper">
+          <div class="services-content">
+            <h2 data-aos="fade-right">
+              We connect our customers with the best, and help them keep up-and
+              stay open.
+            </h2>
+            <br />
+            <p data-aos="fade-right" data-aos-delay="30" class="service-box">
+              <i class="fa-solid fa-leaf"></i> We connect our customers with the
+              best.
+            </p>
+            <br />
+            <p
+              data-aos="fade-right"
+              data-aos-delay="50"
+              class="service-box-white"
+            >
+              <i class="fa-regular fa-eye"></i> Advisor success customer launch
+              party.
+            </p>
+            <br />
+            <p
+              data-aos="fade-right"
+              data-aos-delay="70"
+              class="service-box-white"
+            >
+              <i class="lni lni-sun"></i>
+              Business-to-consumer long tail.
+            </p>
+          </div>
+          <div data-aos="fade-left" class="image">
+            <img class="main-image" src="img/services-img-2.png" alt="" />
+          </div>
+        </div>
+      </section>
+    </section>
+    <section class="reviews">
+      <div class="header">
+        <div data-aos="flip-down" class="title">
+          <h1>An enterprise template to ramp up your company website</h1>
+        </div>
+        <div
+          data-aos="fade-left"
+          data-aos-offset="500"
+          data-aos-duration="400"
+          class="scroll"
+        >
+          <div class="icon">
+            <i class="fa-solid fa-arrow-left fa-xl"></i>
+          </div>
+          <div class="icon">
+            <i class="fa-solid fa-arrow-right fa-xl"></i>
+          </div>
+        </div>
+      </div>
+      <div class="reviews">
+        <div data-aos="zoom-out-up" data-aos-delay="30" class="review-card">
+          <h3>
+            “Buyer buzz partner network disruptive non-disclosure agreement
+            business”
+          </h3>
+          <div class="user-details">
+            <div>
+              <img src="img/usr-1.png" alt="" />
+            </div>
+            <div>
+              <h5>Albus Dumbledore</h5>
+              <p>Manager @ Howarts</p>
+            </div>
+          </div>
+        </div>
+        <div data-aos="zoom-out-up" data-aos-delay="50" class="review-card">
+          <h3>
+            “Learning curve infrastructure value proposition advisor strategy
+            user experience hypotheses investor.”
+          </h3>
+          <div class="user-details">
+            <div>
+              <img src="img/usr-2.png" alt="" />
+            </div>
+            <div>
+              <h5>Severus Snape</h5>
+              <p>Manager @ Slytherin</p>
+            </div>
+          </div>
+        </div>
+        <div data-aos="zoom-out-up" data-aos-delay="70" class="review-card">
+          <h3>
+            “Release facebook responsive web design business model canvas seed
+            money monetization.”
+          </h3>
+          <div class="user-details">
+            <div>
+              <img src="img/usr-3.png" alt="" />
+            </div>
+            <div>
+              <h5>Harry Potter</h5>
+              <p>Team Leader @ Gryffindor</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="faq-wrapper">
+      <img data-aos="fade-down" src="img/faq-image.png" alt="" />
+      <div class="details-wrapper">
+        <div class="title">
+          <h1 data-aos="fade-up">
+            We connect our customers with the best, and help them keep up-and
+            stay open.
+          </h1>
+        </div>
+        <section id="faq">
+          <div class="accordion">
+            <div data-aos="fade-up" class="accordion-item">
+              <div class="accordion-title">
+                <p>We connect our customers with the best?</p>
+                <i class="material-icons add">add_circle_outline</i>
+                <i class="material-icons remove">remove_circle_outline</i>
+              </div>
+              <div class="accordion-content">
+                <p>
+                  The sky is a light shade of blue during th day, but a dark
+                  black during the night.
+                </p>
+              </div>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="50" class="accordion-item">
+              <div class="accordion-title">
+                <p>Android research & development rockstar?</p>
+                <i class="material-icons add">add_circle_outline</i>
+                <i class="material-icons remove">remove_circle_outline</i>
+              </div>
+              <div class="accordion-content">
+                <p>Not a lot, but not too little either.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <section class="our-blog">
+      <h4 data-aos="fade-up">Our Blog</h4>
+      <h1 data-aos="fade-up" data-aos-delay="50">
+        Value proposition accelerator product management venture
+      </h1>
+      <div class="blog-items">
+        <div data-aos="fade-up" data-aos-delay="100" class="blog-item">
+          <img src="img/blog-1.png" alt="" />
+          <h5>Category <span>November 22, 2021</span></h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            veniam quae consectetur obcaecati delectus inventore!
+          </p>
+          <div class="user">
+            <img src="img/usr-1.png" alt="" />
+            <h5>Chandler Bing</h5>
+          </div>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="150" class="blog-item">
+          <img src="img/blog2.png" alt="" />
+          <h5>Category <span>November 22, 2021</span></h5>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae
+            repellendus quasi natus maiores ut beatae rem laudantium
+            necessitatibus quisquam iste?
+          </p>
+          <div class="user">
+            <img src="img/usr-2.png" alt="" />
+            <h5>Rachel Green</h5>
+          </div>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="200" class="blog-item">
+          <img src="img/blog3.png" alt="" />
+          <h5>Category <span>November 22, 2021</span></h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam,
+            ea libero cum quod fugiat dolor! Est, harum nisi.
+          </p>
+          <div class="user">
+            <img src="img/usr-3.png" alt="" />
+            <h5>Monica Geller</h5>
+          </div>
+        </div>
+      </div>
+      <button data-aos="zoom-in" data-aos-delay="250">Load more</button>
+    </section>
+    <section class="newsletter">
+      <div class="inner-content">
+        <h1 data-aos="fade-up">
+          An enterprise template to ramp up your company website
+        </h1>
+        <input
+          data-aos="fade-up"
+          data-aos-delay="50"
+          class="email"
+          type="text"
+          placeholder="Your email adress"
+        />
+        <button data-aos="fade-up" data-aos-delay="100" type="submit">
+          Start Now
+        </button>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-content">
+        <div class="content-wrapper">
+          <div class="info">
+            <div class="logo">
+              <img src="img/logo-black.png" alt="" />
+              <h1>Boldo</h1>
+            </div>
+            <p>
+              Social media validation business model canvas graphical user
+              interface launch party creative facebook iPad twitter.
+            </p>
+            <span>All rights reserved</span>
+          </div>
+          <div class="links">
+            <h4>Landings</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">Services</a></li>
+            </ul>
+          </div>
+          <div class="links">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Careers</a><span>Hiring</span></li>
+              <li><a href="#">Services</a></li>
+            </ul>
+          </div>
+          <div class="links">
+            <h4>Resources</h4>
+            <ul>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">Services</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script src="scripts/index.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+  </body>
+</html>
